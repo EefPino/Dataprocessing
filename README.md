@@ -2,6 +2,7 @@
 Hallo lieve TA's!
 
 Hierbij mijn prachtige files.
-Veel plezier met nakijken.
+Morgen maak ik het wel iets netter.
 
-(Sorry ik kreeg even geen mapje met week 2.)
+Ik weet niet of dit het juiste linkje is, maar hier:
+file:///C:/Users/eveli/Documents/Dataprocessing/Homework/Week_3/line_chart.html
