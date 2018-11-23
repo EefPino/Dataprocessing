@@ -1,8 +1,10 @@
 # Dataprocessing
-Hallo lieve TA's!
+Hallo lieve Nigel (en vele andere bezoekers)!
 
 Hierbij mijn prachtige files.
-Morgen maak ik het wel iets netter.
+Ik had uitstel al een tijd geleden aangevraagd, omdat mij laptop geen files kon maken.
+Ik kreeg ook uitstel, en erna werd gezegd dat iedereen een Wildcart kreeg.
+Dus het liefst zet ik hem niet in, maar anders zet ik mijn Wildcart nu in!
 
-Ik weet niet of dit het juiste linkje is, maar hier:
+Hier is een linkje met de line chart, die ik waarschijnlijk niet hier moest zetten.:
 file:///C:/Users/eveli/Documents/Dataprocessing/Homework/Week_3/line_chart.html
