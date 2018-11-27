@@ -87,6 +87,8 @@ def central_tendency(GDP_numbers):
     # Makes a dataframe of the GDP numbers
     GDP_numbers_2 = pandas.DataFrame(GDP_numbers)
 
+    print(GDP_numbers)
+
     # Calculates the mean of the GDP's
     median = GDP_numbers_2.median()
     print("Median of the GDP's:", median[0])
