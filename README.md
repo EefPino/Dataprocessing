@@ -11,4 +11,4 @@ Ik heb trouwwens de code om de file te maken nog nooit gerund, du het is erg spa
 (Ik heb sommige dingen, zoals de titel van de grafiek nog aangespast op vrijdag. Echter mag je ook die van donderdag nakijken hoor.)
 
 Hier is een linkje met de line chart, die ik waarschijnlijk niet hier moest zetten.:
-file:///C:/Users/eveli/Documents/Dataprocessing/Homework/Week_3/line_chart.html
+https://eefpino.github.io/Dataprocessing/
