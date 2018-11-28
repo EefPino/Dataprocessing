@@ -1,130 +1,22 @@
 <!DOCTYPE html>
 <!--Eveline Tiekink
 11267321
-HTML file for the bar chart for the UvA course Dataprocessing
+HTML file for the line chart for the UvA course Dataprocessing
 -->
 
 <html>
   <head>
+
+    <!--makes a title and imports d3, a library and a stylesheet  -->
     <title>Bar Chart</title>
     <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
   <body>
-    <h1><font face="verdana" color="hotpink">Bar Chart of the percentage of the energy producing of 2016 </font></h1>
-    <h2><font face="verdana" color="darkblue"> Made by Eveline Tiekink - 11267321 </font></h2>
+    <h1> Bar Chart of the percentage of the energy producing of 2016 </h1>
+    <h2> Made by Eveline Tiekink - 11267321 </h2>
     <p>This is a beautiful colored bar chart from data.</p>
-
-    <script type="text/javascript">
-
-      // puts the right data (json file) in
-    	d3.json("data_2.json").then(function(data){
-        var dataValues = [];
-
-        // defines the countries and the values
-        var countries = Object.keys(data);
-        for (var i = 0; i < countries.length; i++) {
-            dataValues.push(parseFloat(data[countries[i]]["Value"]));
-        }
-
-        // console.log("jippie ja jee");
-        // console.log(dataValues);
-        // console.log(countries);
-
-        var width = 500;
-        var height = 50;
-        var svg = d3.select("body")
-                  .append("svg")
-                  .attr("width", width)
-                  .attr("height", height);
-
-        // console.log(Math.max(values))
-        var max = Math.max.apply(null, dataValues);
-        // deze kan je beter omzetten naar een yas
-        var yScale = d3.scaleLinear()
-                       .domain([0, max])
-                       .range([0, height])
-        var xScale= d3.scaleOrdinal()
-                       .domain(countries)
-                       .range([0, width])
-
-        var bars = svg.selectAll("rect")
-          .data(dataValues)
-          .enter()
-          .append("rect")
-          // .attr("class", "bar")
-          .attr("width", 10)
-          .attr("height", function(d, i){
-            return (d)
-          })
-          .attr("x", function(d, i){
-            return 10 + (width / countries.length)* i
-          })
-          .attr("y", function(d, i) {
-            return height - yScale(d)
-          })
-          .attr("fill", "pink");
-
-          //d3.axisBottom().scale(xscale);
-
-
-          var yAxis = d3.axisLeft()
-                     .scale(yScale)
-                     .attr("transform", "translate(" + 10 + "," + 0 + ")");
-                     // .attr("transform", "translate(" + x + "," + y + ")")
-          svg.append("g")
-             .call(yAxis);
-          //add a value label to under each bar
-          bars.append("text")
-              .attr("class", "label")
-
-          var xAxis = d3.axisBottom()
-                     .scale(xScale)
-                     // .attr("transform", "translate(0," + height + ")")
-          svg.append("g")
-             .call(xAxis);
-          //add a value label to under each bar
-          bars.append("text")
-              .attr("class", "label")
-
-
-          for (var i = 0; i < countries.length; i++) {
-            scaleOrdinal(countries[i]);
-          }
-
-          dataValues.push(parseFloat(data[countries[i]]["Value"]));
-
-          // dataValues.push(parseFloat(data[countries[i]]["Value"]));
-          // //make x axis to show bar names
-          // var xAxis = d3.svg.axis()
-          //     .scale(x)
-          //     //no tick marks
-          //     .tickSize(0)
-          //     .orient("height");
-          //
-          // var gy = svg.append("g")
-          //     .attr("class", "y axis")
-          //     .call(yAxis)
-        });
-    // })
-
-    </script>
-
-    <!-- <script type="text/javascript">
-      var values = dataValues;
-
-			d3.select("body").selectAll("div")
-				.data(values)
-				.enter()
-				.append("div")
-				.attr("class", "bar")
-				.style("height", function(d) {
-					var barHeight = d * 5;
-					return barHeight + "px";
-				});
-
-
-    // </script> -->
-    <!-- <div class="bar" style="height:50 px;"></div>
-    <div class="bar" style="height:0.001 px;"></div> -->
+    <script  type="text/javascript" src="barchart.js"></script>
   </body>
 </html>

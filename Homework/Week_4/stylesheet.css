@@ -1,0 +1,39 @@
+/* .textAxis{
+    font-family: "verdana";
+    /* font-size: "10px"; */
+    /* fill: "red";
+} */
+h1 {
+  font-family: verdana;
+  color: hotpink;
+}
+
+h2 {
+  font-family: verdana;
+  color: darkblue;
+}
+
+p {
+  font-family: verdana;
+  color: darkblue;
+}
+
+/* .axis{
+    font-family: verdana;
+    font-size: 20px;
+} */
+.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  height: 12px;
+  padding: 8px;
+  margin-top: -20px;
+  font: 10px sans-serif;
+  background: #ddd;
+  pointer-events: none;
+}
+
+.bar:hover {
+  fill: hotpink ;
+}
