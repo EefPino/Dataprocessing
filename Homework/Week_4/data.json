@@ -313,14 +313,5 @@
         "TIME": "2016",
         "Value": "16.75",
         "Flag Codes": ""
-    },
-    "OECD": {
-        "INDICATOR": "RENEWABLE",
-        "SUBJECT": "TOT",
-        "MEASURE": "PC_PRYENRGSUPPLY",
-        "FREQUENCY": "A",
-        "TIME": "2016",
-        "Value": "9.74",
-        "Flag Codes": ""
     }
 }

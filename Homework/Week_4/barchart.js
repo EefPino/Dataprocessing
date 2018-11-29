@@ -30,7 +30,7 @@ JSON file for the barchart for the UvA course Dataprocessing
                   .attr('class', 'd3-tip')
                   .offset([-10, 0])
                   .html(function(d) {
-                    return "<strong style='color:hotpink' style='family:verdana'>Value:</strong> <span style='color:hotpink'>" + d + "</span>";
+                    return "<strong style='font-family:verdana'>Value:</strong> <span style='font-family:verdana'>" + d + "</span>"
                   })
 
       // calculates the maximum value
@@ -90,12 +90,13 @@ JSON file for the barchart for the UvA course Dataprocessing
          .append("text")
          .attr("transform", "translate(0," + height + ")")
          .style("font-size", "10px")
+         .style("font-family", "verdana")
          .attr("y", 10)
          .attr("id", function(d){
               return d;
              })
          .attr("x", function(d,i){
-                 return (((36 + i + 0.5) * barWidth) + 40 - width )
+                 return (((36 + i + 0.5) * barWidth) + 15 - width )
              })
          .text(function(d){
               return d
