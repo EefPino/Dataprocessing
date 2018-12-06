@@ -13,38 +13,21 @@ window.onload = function () {
 
 
   Promise.all(requests).then(function(response) {
-      // console.log(response);
-      // console.log(response[0].structure)
-      // console.log(response[0].structure.dimensions)
-      // console.log(response[0].dataSets[0].series)
-      // makes a first list with all the years
-      years_first = []
+
+      // makes a list with all the years
+      years = []
       for (var i = 0; i < 9; i++) {
-        // console.log(response[0].structure.dimensions.observation[0].values[i].name)
-        years_first.push(response[0].structure.dimensions.observation[0].values[i].name)
+        years.push(response[0].structure.dimensions.observation[0].values[i].name)
       }
 
-      // makes a first list with all the countries
-      countries_first = []
+      // makes a list with all the countries
+      countries = []
       for (var i = 0; i < 6; i++) {
-        countries_first.push(response[0].structure.dimensions.series[1].values[i].name)
-      }
-
-        // makes a second list with all the years
-      years_second = []
-      for (var i = 0; i < 9; i++) {
-        years_second.push(response[1].structure.dimensions.observation[0].values[i].name)
-      }
-
-        // makes a second list with all the countries
-      countries_second = []
-      for (var i = 0; i < 6; i++) {
-        countries_second.push(response[1].structure.dimensions.series[0].values[i].name)
+        countries.push(response[0].structure.dimensions.series[1].values[i].name)
       }
 
       // makes a list with data of the amount of women in science
       data = []
-      // console.log(response[0].dataSets[0].series["0:0"])
       for (var i = 0; i < 6; i++) {
         number = i.toString()
         for (var j = 0; j < 9; j++) {
@@ -68,21 +51,6 @@ window.onload = function () {
           }
           }
         }
-
-      console.log("begin");
-
-
-      // console.log(years_first)
-      console.log(countries_first)
-      // console.log(years_second)
-      console.log(countries_second)
-      console.log(data)
-      console.log("tussen");
-      console.log(data_2)
-      console.log("einde");
-
-
-      // var margin = {top: 20, right: 10, bottom: 20, left: 10};
 
       // defines all the margins
       width = 600;
@@ -109,16 +77,14 @@ window.onload = function () {
       values = response[2].columns
       civileans = []
       values.forEach(function(d, i) {
-        console.log(d);
         civileans += d
       });
-      console.log(civileans);
 
       // defines the colors
       colors = ["#FEEBE2","#FCC5C0","#FA9FB5","#F768A1","#C51B8A","#7A0177"]
 
       // scales the function used to color the dots from minimal to maximal values
-      var colorScale = d3.scaleQuantize()
+      var colorScale = d3.scaleOrdinal()
                          .domain([17018408, 82667685])
                          .range(colors)
 
@@ -146,10 +112,6 @@ window.onload = function () {
          .attr("transform", "translate(" + 0 + "," + (height - padding_3) + ")")
          .call(xAxis);
 
-      console.log("jippie");
-      // console.log(color);
-
-
       // makes dots
       svg.selectAll("circle")
          .data(data)
@@ -164,98 +126,96 @@ window.onload = function () {
               return yScale(data_2[i]);
          })
          .attr("r", 5)
-
          .attr("fill", function(d, i) {
               // console.log(response[2][0]);
               // console.log(Math.floor(i / 9));
-              console.log(colorScale(d));
               return colorScale(d);
             });
 
-console.log("jeeh");
-         // create color legend --> thomas
+      // gives a title to the x axis
+      svg.append("text")
+         .attr("class", "textAxis")
+         .style("font-family", "verdana")
+         .style("font-size", "12px")
+         .attr("text-anchor", "middle")
+         .attr("transform", "translate(" + (width / 2) + ","+ (height + padding_2 / 2.5) + ")")
+         .text("Percentage of women in science (%)");
 
-      var colorLegend = d3.legend.color()
-                     .labelFormat(d3.format(".0f"))
-                     .scale(colorScale)
-                     .shapePadding(5)
-                     .shapeWidth(50)
-                     .shapeHeight(20)
-                     .labelOffset(12);
-
-      console.log("jippie");
-
-      // make and add legend
-      svg.append("g")
-        // .attr("id", "colorLegend")
-        .attr("transform", "translate("+[param.width + margin.left,
-                                         margin.top]+")")
-        .call(colorLegend);
-
-
-    // color the legend
-    svg.append("text")
-        .attr("transform", "translate(" + width + "," + (height / 2) + ")")
-        .style("text-anchor", "middle")
-        .text(countries_first);
-
-    // adjust size of legend
-    var legendSize = d3.legendSize()
-                        .scale(scales[3])
-                        .shape('circle')
-                        .labelOffset(20)
-                        .orient('vertical');
-
-    svg.append("g")
-         // .attr("class", "legendSize")
-       .attr("transform", "translate(" + width + "," + (height / 2) + ")")
-       .call(legendSize);
-
-
-    svg.append("text")
-       .attr("transform", "translate(" + width + "," + (height / 2) + ")")
-       .style("text-anchor", "middle")
-       .text(countries_first);
-
-
-
-         // .attr("fill", function(d) {
-         //     if ((Object.keys(data[d])).indexOf(String(year)) === -1) {
-         //       return "red";
-         //     };
-         //     colorValue = data[d][year][keys[2]];
-         //     if (colorValue === undefined){
-         //       return "red";
-         //     };
-         //     return scales[2](colorValue);
-         //   })
-
-
-
-                     // svg.append("g")
-                     //    .attr("transform", "translate(" + 0 + "," + (height - padding_3) + ")")
-                     //    .call(xAxis);
-
-
-
-         // .style("fill", function (d) { return colors[d.type]; })
-
-       // gives a title to the x axis
-       svg.append("text")
+      // gives a title to the y axis
+      svg.append("text")
           .attr("class", "textAxis")
           .style("font-family", "verdana")
           .style("font-size", "12px")
           .attr("text-anchor", "middle")
-          .attr("transform", "translate(" + (width / 2) + ","+ (height + padding_2 / 2.5) + ")")
-          .text("Percentage of women in science (%)");
+          .attr("transform", "translate(" + (padding_3 / 2.3) + ","+ (height / 2) +")rotate(-90)")
+          .text("Consumer confidence");
 
-       // gives a title to the y axis
-       svg.append("text")
-           .attr("class", "textAxis")
-           .style("font-family", "verdana")
-           .style("font-size", "12px")
-           .attr("text-anchor", "middle")
-           .attr("transform", "translate(" + (padding_3 / 2.3) + ","+ (height / 2) +")rotate(-90)")
-           .text("Consumer confidence");
+      // add title
+      svg.append("svg:text")
+         .attr("class", "title")
+         .style("font-family", "verdana")
+         .style("font-size", "12px")
+         .attr("text-anchor", "middle")
+         .attr("x", (width / 2))
+         .attr("y", 9)
+         .text("Scatter plot");
+
+      // scales the function for colors with a quantize
+      var colorScale = d3.scaleQuantize()
+                         .domain([17018408, 82667685])
+                         .range(colors);
+
+       // tries to make and add a legend
+      var legend_2 = svg.append("g")
+                        .attr("class", "legend")
+                        .attr("x", width - 65)
+                        .attr("y", 25)
+                        .attr("height", 100)
+                        .attr("width", 100);
+
+      // fills each dot with another color
+      legend.selectAll('g').data(civileans)
+            .enter()
+            .append('g')
+            .each(function(d, i) {
+              var g = d3.select(this);
+              g.append("rect")
+               .attr("x", width - 65)
+               .attr("y", i * 25)
+               .attr("width", 10)
+               .attr("height", 10)
+               .style("fill", colors(i));
+
+      // appends the text to the legend
+      g.append("text")
+          .attr("x", width - 50)
+          .attr("y", i * 25 + 8)
+          .attr("height",30)
+          .attr("width",100)
+          .style("fill", colors(i))
+          .text(colors(i));
+      });
+
+       // tries to make and add another legend
+       svg.append("g")
+          .attr("id", "colorLegend")
+          .attr("transform", "translate(" + width + "," + (height / 2) + ")")
+          .call(colorLegend);
+
+      // creates the legend
+      var colorLegend = d3.legendColor()
+                          .labelFormat(d3.format(".0f"))
+                          .scale(colorScale)
+                          .title("Legend")
+                          .shapePadding(5)
+                          .shapeWidth(50)
+                          .shapeHeight(20)
+                          .labelOffset(12);
+
+    // puts the right values in the legend / dots
+    svg.append("text")
+        .attr("transform", "translate(" + width + "," + (height / 2) + ")")
+        .style("text-anchor", "middle")
+        .text(countries);
     });
-};
+}
