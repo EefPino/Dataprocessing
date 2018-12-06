@@ -127,8 +127,6 @@ window.onload = function () {
          })
          .attr("r", 5)
          .attr("fill", function(d, i) {
-              // console.log(response[2][0]);
-              // console.log(Math.floor(i / 9));
               return colorScale(d);
             });
 
