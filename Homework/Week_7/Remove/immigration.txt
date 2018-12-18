@@ -2,38 +2,38 @@ Geslacht	Leeftijd	Burgerlijke staat	Migratieachtergrond	Onderwerp		2018
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Totaal	Totaal bevolking	aantal	17181084
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Totaal	Eerste generatie migratieachtergrond	aantal	2079329
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Totaal	Totaal 2e generatie migratieachtergrond	aantal	1892530
-Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Totaal	Eén ouder in buitenland geboren	aantal	1061661
+Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Totaal	EÃ©n ouder in buitenland geboren	aantal	1061661
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Totaal	Beide ouders in buitenland geboren	aantal	830869
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Met migratieachtergrond	Totaal bevolking	aantal	3971859
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Met migratieachtergrond	Eerste generatie migratieachtergrond	aantal	2079329
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Met migratieachtergrond	Totaal 2e generatie migratieachtergrond	aantal	1892530
-Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Met migratieachtergrond	Eén ouder in buitenland geboren	aantal	1061661
+Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Met migratieachtergrond	EÃ©n ouder in buitenland geboren	aantal	1061661
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Met migratieachtergrond	Beide ouders in buitenland geboren	aantal	830869
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Afrika	Totaal bevolking	aantal	673908
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Afrika	Eerste generatie migratieachtergrond	aantal	334809
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Afrika	Totaal 2e generatie migratieachtergrond	aantal	339099
-Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Afrika	Eén ouder in buitenland geboren	aantal	95384
+Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Afrika	EÃ©n ouder in buitenland geboren	aantal	95384
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Afrika	Beide ouders in buitenland geboren	aantal	243715
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Amerika	Totaal bevolking	aantal	683250
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Amerika	Eerste generatie migratieachtergrond	aantal	363643
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Amerika	Totaal 2e generatie migratieachtergrond	aantal	319607
-Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Amerika	Eén ouder in buitenland geboren	aantal	167243
+Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Amerika	EÃ©n ouder in buitenland geboren	aantal	167243
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Amerika	Beide ouders in buitenland geboren	aantal	152364
-Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Azië	Totaal bevolking	aantal	909910
-Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Azië	Eerste generatie migratieachtergrond	aantal	493814
-Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Azië	Totaal 2e generatie migratieachtergrond	aantal	416096
-Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Azië	Eén ouder in buitenland geboren	aantal	248598
-Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Azië	Beide ouders in buitenland geboren	aantal	167498
+Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	AziÃ«	Totaal bevolking	aantal	909910
+Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	AziÃ«	Eerste generatie migratieachtergrond	aantal	493814
+Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	AziÃ«	Totaal 2e generatie migratieachtergrond	aantal	416096
+Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	AziÃ«	EÃ©n ouder in buitenland geboren	aantal	248598
+Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	AziÃ«	Beide ouders in buitenland geboren	aantal	167498
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Europa (excl. Nederlandse achtergrond)	Totaal bevolking	aantal	1681584
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Europa (excl. Nederlandse achtergrond)	Eerste generatie migratieachtergrond	aantal	878210
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Europa (excl. Nederlandse achtergrond)	Totaal 2e generatie migratieachtergrond	aantal	803374
-Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Europa (excl. Nederlandse achtergrond)	Eén ouder in buitenland geboren	aantal	537029
+Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Europa (excl. Nederlandse achtergrond)	EÃ©n ouder in buitenland geboren	aantal	537029
 Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Europa (excl. Nederlandse achtergrond)	Beide ouders in buitenland geboren	aantal	266345
-Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Oceanië	Totaal bevolking	aantal	23207
-Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Oceanië	Eerste generatie migratieachtergrond	aantal	8853
-Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Oceanië	Totaal 2e generatie migratieachtergrond	aantal	14354
-Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Oceanië	Eén ouder in buitenland geboren	aantal	13407
-Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	Oceanië	Beide ouders in buitenland geboren	aantal	947
+Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	OceaniÃ«	Totaal bevolking	aantal	23207
+Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	OceaniÃ«	Eerste generatie migratieachtergrond	aantal	8853
+Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	OceaniÃ«	Totaal 2e generatie migratieachtergrond	aantal	14354
+Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	OceaniÃ«	EÃ©n ouder in buitenland geboren	aantal	13407
+Totaal mannen en vrouwen	Totaal	Totaal burgerlijke staat	OceaniÃ«	Beide ouders in buitenland geboren	aantal	947
 						
 						
 						
