@@ -297,11 +297,11 @@ window.onload = function(){
         .text("Legenda");
 
     // gives values to the legend
-    for (i in barList) {
+    for (i in numberList) {
       svgBar.append("text")
             .attr("class", "legendText")
             .attr("transform", "translate(" + (widthSVG - 8 * padding3 - padding2)  + "," + (3 * padding2 + 10 * parseInt(i)) + ")")
-            .text(i + 1);
+            .text(numberList[i]);
     }
 
     for (i in numberList) {
