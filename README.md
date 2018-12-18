@@ -8,3 +8,5 @@ Ik kreeg namelijk geen files of folders verwijderd.
 Hier is het linkje naar mijn plots:
 https://eefpino.github.io/Dataprocessing/
 
+x-jes
+Eveline
