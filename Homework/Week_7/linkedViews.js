@@ -301,7 +301,7 @@ window.onload = function(){
       svgBar.append("text")
             .attr("class", "legendText")
             .attr("transform", "translate(" + (widthSVG - 8 * padding3 - padding2)  + "," + (3 * padding2 + 10 * parseInt(i)) + ")")
-            .text(i);
+            .text(i + 1);
     }
 
     for (i in numberList) {
