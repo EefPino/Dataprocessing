@@ -278,7 +278,7 @@ window.onload = function(){
          .attr("class", "textAxis")
          .style("font-family", "verdana")
          .attr("transform", "translate(" + 11 + ","+ (height / 2 + 2 * padding3) +")rotate(-90)")
-         .text("Hoeveelheid immigratie (%)");
+         .text("Hoeveelheid immigratanten");
 
      // gives a title to the x axis
      svgBar.append("text")
